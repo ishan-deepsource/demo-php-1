@@ -34,7 +34,7 @@ class Greet
         }
 
         $greet = function ($name) use ($message) {
-            echo $name;
+            return $name;
         };
 
         $greet('John');
