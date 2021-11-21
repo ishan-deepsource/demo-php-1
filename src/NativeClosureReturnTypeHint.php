@@ -11,7 +11,7 @@ class NativeClosureReturnTypeHint
     public function run(): string
     {
         $closure = function () {
-            return 'Hey, there!';
+            return 'Hello, there!';
         };
 
         return $closure();
