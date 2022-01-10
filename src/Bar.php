@@ -131,7 +131,6 @@ class Bar
         $array[] = 10;
         $array[][] = 10;
         $array[];
-        var_dump($array[]);
     }
 
     public function undefinedConstant()

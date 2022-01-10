@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
-class DefinedVariableCheck
+class Greet
 {
     public function run(): void
     {
@@ -25,5 +25,18 @@ class DefinedVariableCheck
     protected function getMessage(): string
     {
         return 'Hello there!';
+    }
+
+    public function setMessage(string $message): void
+    {
+        if (isset($defaultMessage)) {
+            $message = $defaultMessage;
+        }
+
+        $greet = function ($name) use ($message) {
+            return $name;
+        };
+
+        $greet('John');
     }
 }

@@ -12,4 +12,12 @@ class PreferenceController
     {
         return 'I am final!';
     }
+
+    public function index(): void
+    {
+        $title = 'About us';
+        $slug = 'about-us';
+
+        return compact('title', 'slug', 'description');
+    }
 }
