@@ -1,5 +1,7 @@
 version = 1
 
+test_patterns = ["tests/**"]
+
 exclude_patterns = [
   "vendor/**",
   "public/**"
@@ -7,4 +9,8 @@ exclude_patterns = [
 
 [[analyzers]]
 name = "php"
+enabled = true
+
+[[transformers]]
+name = "php-cs-fixer"
 enabled = true
