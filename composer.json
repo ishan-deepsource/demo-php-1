@@ -8,6 +8,11 @@
             "utils/version.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests"
+        }
+    },
     "require-dev": {
         "phpstan/phpstan": "^0.12.94",
         "squizlabs/php_codesniffer": "^3.6"
