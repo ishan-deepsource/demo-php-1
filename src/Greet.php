@@ -6,6 +6,13 @@ namespace App;
 
 class Greet
 {
+    private $defaultMessage;
+
+    public function __contruct()
+    {
+        $this->defaultMessage = 'Hey %s,';
+    }
+
     public function run(): void
     {
         echo $greetings;
@@ -38,5 +45,12 @@ class Greet
         };
 
         $greet('John');
+    }
+
+    public function methodWithInnerFunction(Fo $foo)
+    {
+        function getFromUserName() {
+            return [];
+        }
     }
 }
