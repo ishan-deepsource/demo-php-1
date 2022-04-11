@@ -7,6 +7,8 @@ namespace App\Controller;
 class PreferenceController
 {
     public string $type = 'type';
+    
+    var $legacyProp = 'some value';
 
     final public function finalMethod(): string
     {
