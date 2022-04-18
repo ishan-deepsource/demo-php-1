@@ -24,4 +24,6 @@ class PreferenceController
 
         return compact('title', 'slug', 'description');
     }
+    
+    public function get_settings(): void {}
 }
