@@ -19,6 +19,8 @@ class PreferenceController
     {
         $title = 'About us';
         $slug = 'about-us';
+        
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_MAGIC_QUOTES);
 
         return compact('title', 'slug', 'description');
     }
