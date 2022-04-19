@@ -137,6 +137,13 @@ class Bar
     {
         var_dump(\NONEXISTENT_CONSTANT);
     }
+
+    public function createExceptionClassObject(bool $is): void
+    {
+        if (! $is) {
+            new \Exception('$is must be true.');
+        }
+    }
 }
 
 function aFunc()
