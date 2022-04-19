@@ -143,6 +143,16 @@ class Bar
         if (! $is) {
             new \Exception('$is must be true.');
         }
+
+        $array = [];
+        $notUsed = false;
+
+        if (count($array) >= 0) { // it's always greater than or equal to zero
+        }
+
+        if (count($is) >= 0) {
+            // code...
+        }
     }
 }
 
