@@ -10,4 +10,11 @@ class UserController
             return 'Add user';
         };
     }
+
+    public static function doFoo()
+    {
+        if ($this->name != null) {
+            //
+        }
+    }
 }
