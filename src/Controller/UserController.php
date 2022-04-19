@@ -16,5 +16,7 @@ class UserController
         if ($this->name != null) {
             //
         }
+
+        $a == 1;
     }
 }
