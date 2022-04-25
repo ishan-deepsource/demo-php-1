@@ -23,5 +23,6 @@ class Foo
 
     public function shouldReturnInt(): int
     {
+        $imNull = (unset) $someVal;
     }
 }

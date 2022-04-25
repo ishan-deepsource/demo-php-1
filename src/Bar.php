@@ -4,6 +4,8 @@ namespace App;
 
 class Bar
 {
+    var $flags = [];
+
     public function run()
     {
         $hello = 'there!';
@@ -119,9 +121,11 @@ class Bar
 
     public function literalArrayItem(): array
     {
-        // $characters = ['Spock', 'Kirk', , 'McCoy'];
+        $characters = ['Spock', 'Kirk', , 'McCoy'];
 
         return $characters;
+
+        some_func_call();
     }
 
     public function arrayWithoutDimForReading(): void

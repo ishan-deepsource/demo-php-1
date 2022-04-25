@@ -10,6 +10,8 @@ class User
 
     public function encryptPassword(string $password): string
     {
+        $user = (unset) $user;
+
         return md5($password);
     }
 

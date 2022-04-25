@@ -7,4 +7,6 @@ class Version
     private const PHP_74 = 70400;
 
     public const PHP_80 = 80000;
+
+    public const php_81 = 80100;
 }
