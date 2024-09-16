@@ -36,5 +36,7 @@ function definedCheck()
         return sprintf('$factory var is instance of %s class', __CLASS__);
     }
 
+    $factory = $factory;
+
     return 'Not found';
 }
